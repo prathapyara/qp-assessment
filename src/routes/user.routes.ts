@@ -3,7 +3,7 @@ import {
   getAvailableGroceries,
   bookGroceries,
 } from "../controllers/user.controller";
-import { verifyIsLoggedIn } from "../helper/verifiyIsAdmin";
+import { verifyIsLoggedIn } from "../helper/verifyAuthToken";
 
 const router = Router();
 

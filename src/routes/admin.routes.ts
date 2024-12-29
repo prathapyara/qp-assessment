@@ -5,7 +5,7 @@ import {
   updateGrocery,
   deleteGrocery,
 } from "../controllers/admin.controller";
-import { verifyIsAdmin,verifyIsLoggedIn } from "../helper/verifiyIsAdmin";
+import { verifyIsAdmin, verifyIsLoggedIn } from "../helper/verifyAuthToken";
 
 const router = Router();
 
