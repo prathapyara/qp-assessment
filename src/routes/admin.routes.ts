@@ -5,9 +5,12 @@ import {
   updateGrocery,
   deleteGrocery,
 } from "../controllers/admin.controller";
+import { verifyIsAdmin,verifyIsLoggedIn } from "../helper/verifiyIsAdmin";
 
 const router = Router();
 
+router.use(verifyIsLoggedIn);
+router.use(verifyIsAdmin);
 router.post("/groceries", addGrocery);
 router.get("/groceries", getGroceries);
 router.put("/groceries/:id", updateGrocery);
